@@ -1,4 +1,4 @@
-package com.boilerplate;
+package kakatoo.id.rfid;
 
 import com.facebook.react.ReactActivity;
 
@@ -17,7 +17,7 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "Boilerplate";
+        return "Absensi";
     }
 
     //react-native-gesture-handler

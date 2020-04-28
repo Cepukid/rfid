@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { useDispatch, useSelector } from "react-redux";
 
 import Stack from "./Stack";
+import Bottom from "./Bottom";
 import { isEnglish } from "../I18n";
 
 // action & types redux
@@ -26,9 +27,7 @@ const App = () => {
   }, []);
 
   return (
-    <NavigationContainer>
-      <Stack />
-    </NavigationContainer>
+      <Bottom />
   );
 };
 

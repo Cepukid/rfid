@@ -5,6 +5,7 @@ const colors = {
   underlay: "rgba(100,100,100,0.1)",
   red: "#d63031",
   green: "#00b894",
+  blue:"#42A5F6",
   green03: "rgba(0, 184, 148, 0.3)"
 };
 

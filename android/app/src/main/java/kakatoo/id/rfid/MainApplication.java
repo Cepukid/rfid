@@ -1,4 +1,4 @@
-package com.boilerplate;
+package kakatoo.id.rfid;
 
 import android.app.Application;
 import android.os.SystemClock;
@@ -6,6 +6,7 @@ import android.os.SystemClock;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.reactnativecommunity.webview.RNCWebViewPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
