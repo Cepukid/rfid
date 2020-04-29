@@ -3,9 +3,13 @@ import {
     SafeAreaView,
     Text,
     ScrollView,
-    View
+    View,
+    Image,
+    TouchableOpacity,
   } from "react-native";
   import { SliderBox } from "react-native-image-slider-box";
+  import { IMAGES } from "../../configs";
+  import { useNavigation } from "@react-navigation/native";
   import { widthPercent } from "../../utils";
   import HTML from 'react-native-render-html';
   const Pengumuman = () => {
@@ -23,6 +27,11 @@ import {
         "https://source.unsplash.com/1024x768/?tree", // Network image
       ]
     };
+    
+    // const itemId = Route().params.friends[0];
+    // const itemId = getParam('friends','aa');
+    const itemId = useNavigation().getParam('friends', {});
+    const {goBack,getParam} = useNavigation();
       return(
         <SafeAreaView>
             <ScrollView >
@@ -30,7 +39,7 @@ import {
               <View style={{margin:10}}>
                 <View style={{justifyContent:"space-between",flexDirection:"row"}}>
                   <Text style={{fontSize:20,marginBottom:5}}>Pengumuman</Text>
-                  <Text style={{fontSize:10}}>1 Jam</Text>
+                  <Text style={{fontSize:10}}>itemId</Text>
                 </View>
                 <View
                   style={{
@@ -43,6 +52,9 @@ import {
               </View>
 
             </ScrollView>
+            <TouchableOpacity onPress={() => goBack()} style={{position:"absolute",marginTop:15,marginStart:10}}>
+              <Image source={IMAGES.back} style={{height:25,width:25}}/>
+            </TouchableOpacity>
         </SafeAreaView>
       );
 

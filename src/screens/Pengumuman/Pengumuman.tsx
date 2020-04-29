@@ -109,8 +109,7 @@ import {
   const Pengumuman = () => {
     const { navigate } = useNavigation();
     const _onClickTrash = (item: number) => {
-      
-      navigate("DetailPengumuman")
+      navigate("DetailPengumuman",{friends: "aa",})
     };
     const _renderItem = ({ item, index }: any) => (
       <View style={{height:heightPercent(18),
